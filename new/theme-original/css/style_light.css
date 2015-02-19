@@ -1,4 +1,4 @@
-/* Lamap App Landing Page Dark version Stylesheet
+/* Lamap App Landing Page Light version Stylesheet
 ====================================================== */
 
 /* HTML 5 reset & Bootstrap fixes */
@@ -24,17 +24,17 @@ time, mark, audio, video {
 }
 
 html {
-    min-height: 100%;
-
-    background: #C07B3A url('../images/bg.jpg') 100% 100% no-repeat;
-    background: url('../images/bg.png') 100% 100% no-repeat, #C07B3A url('../images/bg.jpg') 100% 100% no-repeat;
-
-    -webkit-background-size: cover;
-    background-size: cover;
+    font-size: 100%;
 }
 
 body {
-    background: transparent;
+    background-color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: -0.01em;
+    overflow-x: hidden;
+    position: relative;
 }
 
 article,aside,details,figcaption,figure,
@@ -49,7 +49,6 @@ ol {
 
 ul li {
     list-style:none;
-    color: #fff;
 }
 
 blockquote, q {
@@ -67,7 +66,7 @@ a {
     padding:0;
     font-size:100%;
     vertical-align:baseline;
-    color: #fff;
+    color: #282828;
     background:transparent;
     -webkit-transition: all .15s linear;
        -moz-transition: all .15s linear;
@@ -85,7 +84,6 @@ p {
     font-weight: 300;
     line-height: 2em;
     margin-bottom: 10px;
-    color: #fff;
 }
 
 button {
@@ -147,7 +145,7 @@ figure img {
     width: 208px;
     text-align: center;
     font-weight: bold;
-    color: #fff;
+    color: #282828;
 }
 .nav-tabs>li>a:hover {
     color: #fff;
@@ -177,24 +175,20 @@ figure img {
 h1 {
     font-size: 42px;
     font-weight: 300;
-    color: #fff;
 }
 
 h2 {
     font-size: 38px;
-    color: #fff;
 }
 
 h3 {
     font-size: 24px;
-    color: #fff;
 }
 
 h4 {
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 20px;
-    color: #fff;
 }
 
 /* Button Styles */
@@ -215,15 +209,12 @@ h4 {
     color: #fff;
 }
 
-
-
 .btn-custom-border {
     background: transparent;
     color: #282828;
 }
 
 .btn-send {
-
     height: 62px;
     margin: 0 0 0 5px;
     vertical-align: top;
@@ -248,7 +239,6 @@ h4 {
          -o-transition: all .15s linear;
             transition: all .15s linear;
 }
-
 
 /* Strokes */
 
@@ -316,7 +306,7 @@ section {
 /* Fixed Navbar */
 .navbar {
     min-height: 80px;
-    background-color: #000;
+    background-color: #fff;
     border: none;
     -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
     -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
@@ -345,7 +335,7 @@ section {
 .navbar-default .navbar-nav>li>a {
     font-size: 14px;
     font-weight: bold;
-    color: #fff;
+    color: #282828;
     padding-top: 30px;
     padding-bottom: 30px;
 }
@@ -358,6 +348,7 @@ section {
     -webkit-background-size: cover;
             background-size: cover;
 }
+
     .intro .intro-section {
         max-width: 675px;
         padding: 130px 0;
@@ -386,12 +377,13 @@ section {
     }
         a.mouse i {
             position: relative;
+            color: #fff;
         }
 
 /* Features Section */
 
 .features {
-    background: #171616;
+    background: #f9f9f9;
 }
 
 .features .features-left {
@@ -450,9 +442,7 @@ section {
 
 
 /* Reviews Section */
-.reviews {
-    background-color: #171616;
-}
+
 .client-data {
     border-right: 1px solid #e1e1e1;
 }
@@ -461,7 +451,7 @@ section {
     float: left;
 }
     .client-image img {
-        border: 7px solid #fff;
+        border: 7px solid #f2f2f2;
         border-radius: 50%;
     }
 
@@ -479,9 +469,6 @@ section {
 
 
 /* Service Section */
-.services {
-    background-color: #1a1b1c;
-}
 
 .service {
     text-align: center;
@@ -505,17 +492,13 @@ section {
 /* Newsletter Section */
 
 .newsletter {
-    background: transparent;
+    background-image: url(../images/newsletter_bg.jpg);
+    -webkit-background-size: cover;
+            background-size: cover;
 }
 
 .newsletter .section-head {
     color: #fff;
-    height:100%;
-}
-
-.newsletter .fill { 
-    min-height: 100%;
-    height: 100%;
 }
 
 .newsletter .form {
@@ -554,9 +537,6 @@ section {
 
 
 /* Screenshot Section */
-.screenshots {
-    background-color: #171616;
-}
 
 .small-slider .owl-prev {
     position: absolute;
@@ -575,7 +555,6 @@ section {
     display: inline-block;
     position: relative;
 }
-
 .screens .screen img {
     border-radius: 4px;
 }
@@ -611,9 +590,6 @@ section {
     }
 
 /* Brief Section */
-.brief {
-    background-color: #1a1b1c;
-}
 
 .brief-content {
     max-width: 500px;
@@ -640,14 +616,13 @@ section {
 /* Packages Section */
 
 .packages {
-    background: #181818;
+    background: #f9f9f9;
     text-align: center;
 }
 
 .packages .package {
     border: 1px solid #e1e1e1;
     border-radius: 4px;
-    background-color: transparent;
     padding: 30px 0;
 }
 
@@ -660,7 +635,6 @@ section {
     font-size: 30px;
     font-weight: 300;
     display: block;
-    color: #fff;
 }
 
 .packages .package .package-features ul li {
@@ -670,14 +644,10 @@ section {
 .packages .package .btn {
     margin-top: 10px;
     width: 208px;
-    color: #fff;
 }
 
 
 /* Extra Section */
-.extra {
-    background-color: #171616;
-}
 
 ul.extra-features {
     max-width: 470px;
@@ -696,12 +666,12 @@ ul.extra-features .icon {
     float: left;
     text-align: center;
 }
-ul.extra-features i{
+ul.extra-features i {
     font-size: 38px;
 }
 
 .tabs {
-    margin-bottom: 50px;
+    margin-bottom   : 50px;
 }
 
 
@@ -721,7 +691,7 @@ ul.extra-features i{
 /* Customer Section */
 .customers {
     padding: 50px 0px;
-    background: #171616;
+    background: #f9f9f9;
 }
 
 .customers .customer-slider .item img {
@@ -734,11 +704,7 @@ ul.extra-features i{
     opacity: 1;
 } 
 
-
 /* Download Section */
-.download {
-    background-color: #1a1b1c;
-}
 
 .download .btn {
     width: 208px;
@@ -755,7 +721,7 @@ ul.extra-features i{
 
 .footer {
     padding: 100px 0 20px 0;
-    background-color: #171616;
+    background-color: #f2f2f2;
 }
 
 .footer .underline-small {
@@ -810,7 +776,6 @@ ul.extra-features i{
 
 .footer i {
     font-size: 16px;
-    color: #333;
 }
 
 .footer h4 {
