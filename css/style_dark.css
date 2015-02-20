@@ -26,11 +26,11 @@ time, mark, audio, video {
 html {
     min-height: 100%;
 
-    background: #C07B3A url('../images/bg.jpg') 100% 100% no-repeat;
-    background: url('../images/bg.png') 100% 100% no-repeat, #C07B3A url('../images/bg.jpg') 100% 100% no-repeat;
+	background: url('../images/ip.png'), url('../images/bg.jpg');
 
-    -webkit-background-size: cover;
-    background-size: cover;
+	background-repeat: no-repeat, no-repeat;
+    background-position: bottom 20% center, center;
+    background-size: 80%, cover;
 }
 
 body {
